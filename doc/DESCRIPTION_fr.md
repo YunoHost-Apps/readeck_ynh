@@ -1,0 +1,1 @@
+Readeck est une application Web simple qui vous permet de sauvegarder le précieux contenu lisible des pages Web que vous aimez et que vous souhaitez conserver pour toujours.

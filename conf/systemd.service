@@ -1,0 +1,20 @@
+[Unit]
+Description=Readeck: Open Source bookmark manager
+After=network.target
+
+[Service]
+Type=simple
+User=__APP__
+Group=__APP__
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=__INSTALL_DIR__/readeck serve -config __INSTALL_DIR__/config.toml
+Restart=on-failure
+RestartSec=5
+
+ProtectSystem=full
+PrivateTmp=true
+SystemCallArchitectures=native
+MemoryDenyWriteExecute=true
+NoNewPrivileges=true
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,24 @@
+[main]
+log_level = "info"
+secret_key = "__KEY__"
+data_directory = "data"
+
+[server]
+host = "127.0.0.1"
+port = __PORT__
+allowed_hosts = ["__DOMAIN__"]
+use_x_forwarded_for = true
+use_x_forwarded_host = true
+use_x_forwarded_proto = true
+
+[database]
+source = "postgres://__DB_USER__:__DB_PWD__@localhost:5432/__DB_NAME__"
+
+[email]
+host = "localhost"
+port = 25
+username = "__APP__"
+password = "__MAIL_PWD__"
+encryption = ""
+from = "__APP__@__DOMAIN__"
+from_noreply = "noreply@__DOMAIN__"

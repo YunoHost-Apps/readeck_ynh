@@ -1,0 +1,72 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "readeck"
+name = "Readeck"
+description.en = "Bookmark manager and a read later tool"
+description.fr = "Gestionnaire de favoris et outil de lecture ultérieure"
+
+version = "0.12.0~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "AGPL-3.0"
+website = "https://readeck.org/"
+admindoc = "https://readeck.org/en/docs/"
+code = "https://codeberg.org/readeck/readeck"
+
+[integration]
+yunohost = ">= 11.2"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.12.0/readeck-0.12.0-linux-amd64"
+    amd64.sha256 = "c2387688f4603a65e77f20042afd76191551ff2d6abe56117a82fb759837fa67"
+    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.12.0/readeck-0.12.0-linux-arm64"
+    arm.sha256 = "1ee30dc8ab6478d4ba1c1f179d4381cdac4e7e7dc2f7071f945374823fdab72e"
+    armhf.url = "https://codeberg.org/readeck/readeck/releases/download/0.12.0/readeck-0.12.0-linux-arm-6"
+    armhf.sha256 = "62b33fbe63726ac59d4242ec8b6bb31641d09246274e83a5d3989be57d46c478"
+    rename = "readeck"
+    
+    [resources.system_user]
+    allow_email = true
+
+    [resources.install_dir]
+
+    [resources.data_dir]
+
+    [resources.permissions]
+    main.url = "/"
+    main.auth_header = false
+
+    [resources.ports]
+
+    [resources.apt]
+    packages = "postgresql"
+
+    [resources.database]
+    type = "postgresql"
+
