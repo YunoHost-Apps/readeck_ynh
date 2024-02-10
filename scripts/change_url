@@ -30,10 +30,10 @@ ynh_change_url_nginx_config
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="config.toml" --destination="$data_dir_dir/config.toml"
+ynh_add_config --template="config.toml" --destination="$data_dir/config.toml"
 
-chmod 600 "$data_dir_dir/config.toml"
-chown "$app:$app" "$data_dir_dir/config.toml"
+chmod 600 "$data_dir/config.toml"
+chown "$app:$app" "$data_dir/config.toml"
 
 #=================================================
 # GENERIC FINALISATION
