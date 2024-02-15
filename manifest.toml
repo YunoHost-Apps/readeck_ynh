@@ -50,6 +50,11 @@ ram.runtime = "50M"
     armhf.url = "https://codeberg.org/readeck/readeck/releases/download/0.12.0/readeck-0.12.0-linux-arm-6"
     armhf.sha256 = "62b33fbe63726ac59d4242ec8b6bb31641d09246274e83a5d3989be57d46c478"
     rename = "readeck"
+
+    autoupdate.strategy = "latest_forgejo_release"
+    autoupdate.asset.amd64 = "^readeck-.*-linux-amd64$"
+    autoupdate.asset.arm64 = "^readeck-.*-linux-arm64$"
+    autoupdate.asset.armhf = "^readeck-.*-linux-arm-6$"
     
     [resources.system_user]
     allow_email = true
