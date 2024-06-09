@@ -16,5 +16,6 @@ PrivateTmp=true
 SystemCallArchitectures=native
 MemoryDenyWriteExecute=true
 NoNewPrivileges=true
+
 [Install]
 WantedBy=multi-user.target

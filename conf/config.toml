@@ -22,3 +22,6 @@ password = "__MAIL_PWD__"
 encryption = ""
 from = "__APP__@__DOMAIN__"
 from_noreply = "noreply@__DOMAIN__"
+
+[bookmarks]
+public_share_ttl = 48
