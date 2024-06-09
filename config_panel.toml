@@ -10,8 +10,6 @@ services = ["__APP__"]
 
         [main.configuration.link]
         ask = "Public link sharing time"
-        type = "boolean"
-        yes = "true"
-        no = "false"
-        help = "Public link sharing time in hours"
+        type = "number"
+        help = "Indicate the public link sharing time in hours"
         bind = "public_share_ttl:__DATA_DIR__/config.toml"

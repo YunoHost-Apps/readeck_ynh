@@ -14,7 +14,9 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 key=$(ynh_string_random --length=50)
+
 public_share_ttl="48"
+ynh_app_setting_set --app=$app --key=public_share_ttl --value=$public_share_ttl
 
 #=================================================
 # APP "BUILD" (DEPLOYING SOURCES, VENV, COMPILING ETC)
