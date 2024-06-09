@@ -1,5 +1,5 @@
 [Unit]
-Description=Readeck: Open Source bookmark manager
+Description=Readeck: bookmark manager
 After=network.target
 
 [Service]
