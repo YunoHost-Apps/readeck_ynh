@@ -8,7 +8,7 @@ services = ["__APP__"]
     [main.configuration]
     name = "Users and accounts configuration"
 
-        [main.configuration.link]
+        [main.configuration.public_share_ttl]
         ask = "Public link sharing time"
         type = "number"
         help = "Indicate the public link sharing time in hours"
