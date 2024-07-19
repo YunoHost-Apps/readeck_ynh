@@ -5,7 +5,7 @@
 
 # YunoHost 上的 Readeck
 
-[![集成程度](https://dash.yunohost.org/integration/readeck.svg)](https://dash.yunohost.org/appci/app/readeck) ![工作状态](https://ci-apps.yunohost.org/ci/badges/readeck.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/readeck.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/readeck.svg)](https://ci-apps.yunohost.org/ci/apps/readeck/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/readeck.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/readeck.maintain.svg)
 
 [![使用 YunoHost 安装 Readeck](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=readeck)
 
@@ -18,7 +18,7 @@
 
 Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever.
 
-**分发版本：** 0.14.0~ynh1
+**分发版本：** 0.15.0~ynh1
 
 ## 截图
 
