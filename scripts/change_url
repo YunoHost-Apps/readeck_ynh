@@ -26,9 +26,6 @@ ynh_script_progression "Adding $app's configuration..."
 
 ynh_config_add --template="config.toml" --destination="$data_dir/config.toml"
 
-#REMOVEME? Assuming the file is setup using ynh_config_add, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod 600 "$data_dir/config.toml"
-#REMOVEME? Assuming the file is setup using ynh_config_add, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown "$app:$app" "$data_dir/config.toml"
-
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
