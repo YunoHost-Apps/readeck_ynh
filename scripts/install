@@ -16,7 +16,7 @@ ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
-chmod a+x  "$install_dir/readeck"
+chmod a+x "$install_dir/readeck"
 
 #=================================================
 # SYSTEM CONFIGURATION
@@ -48,4 +48,5 @@ ynh_systemctl --service="$app" --action="start" --log_path="systemd"
 #=================================================
 # END OF SCRIPT
 #=================================================
+
 ynh_script_progression "Installation of $app completed"

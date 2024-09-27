@@ -17,7 +17,7 @@ ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
-chmod a+x  "$install_dir/readeck"
+chmod a+x "$install_dir/readeck"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
