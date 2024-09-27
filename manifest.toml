@@ -18,7 +18,8 @@ admindoc = "https://readeck.org/en/docs/"
 code = "https://codeberg.org/readeck/readeck"
 
 [integration]
-yunohost = ">= 11.2"
+yunohost = ">= 11.2.30"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
