@@ -18,7 +18,7 @@ No se debe editar a mano.
 
 Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever.
 
-**Versión actual:** 0.15.1~ynh1
+**Versión actual:** 0.15.3~ynh1
 
 ## Capturas
 
@@ -34,7 +34,7 @@ Readeck is a simple web application that lets you save the precious readable con
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/readeck_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/readeck_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
