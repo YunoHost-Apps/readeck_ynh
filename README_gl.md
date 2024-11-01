@@ -18,7 +18,7 @@ NON debe editarse manualmente.
 
 Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever.
 
-**Versión proporcionada:** 0.15.4~ynh1
+**Versión proporcionada:** 0.15.4~ynh2
 
 ## Capturas de pantalla
 
