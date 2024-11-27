@@ -17,7 +17,7 @@ Wenn Sie YunoHost nicht haben, lesen Sie bitte [die Anleitung](https://yunohost.
 ## Übersicht
 
 Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever.
-**Ausgelieferte Version:** 0.15.4~ynh1
+**Ausgelieferte Version:** 0.16.0~ynh1
 
 ## Bildschirmfotos
 
