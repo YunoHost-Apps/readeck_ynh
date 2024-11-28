@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # Readeck para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/readeck.svg)](https://dash.yunohost.org/appci/app/readeck) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/readeck.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/readeck.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/readeck)](https://ci-apps.yunohost.org/ci/apps/readeck/)
+![Estado funcional](https://apps.yunohost.org/badge/state/readeck)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/readeck)
 
 [![Instalar Readeck con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=readeck)
 
@@ -18,7 +20,7 @@ No se debe editar a mano.
 
 Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever.
 
-**Versión actual:** 0.14.0~ynh1
+**Versión actual:** 0.16.0~ynh1
 
 ## Capturas
 
@@ -34,7 +36,7 @@ Readeck is a simple web application that lets you save the precious readable con
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/readeck_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/readeck_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
