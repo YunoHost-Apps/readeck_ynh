@@ -5,7 +5,9 @@ NON debe editarse manualmente.
 
 # Readeck para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/readeck.svg)](https://ci-apps.yunohost.org/ci/apps/readeck/) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/readeck.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/readeck.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/readeck)](https://ci-apps.yunohost.org/ci/apps/readeck/)
+![Estado de funcionamento](https://apps.yunohost.org/badge/state/readeck)
+![Estado de mantemento](https://apps.yunohost.org/badge/maintained/readeck)
 
 [![Instalar Readeck con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=readeck)
 
@@ -18,7 +20,7 @@ NON debe editarse manualmente.
 
 Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever.
 
-**Versión proporcionada:** 0.15.6~ynh1
+**Versión proporcionada:** 0.16.0~ynh1
 
 ## Capturas de pantalla
 

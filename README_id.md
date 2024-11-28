@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Readeck untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/readeck.svg)](https://ci-apps.yunohost.org/ci/apps/readeck/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/readeck.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/readeck.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/readeck)](https://ci-apps.yunohost.org/ci/apps/readeck/)
+![Status kerja](https://apps.yunohost.org/badge/state/readeck)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/readeck)
 
 [![Pasang Readeck dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=readeck)
 
@@ -18,7 +20,7 @@ Ini TIDAK boleh diedit dengan tangan.
 
 Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever.
 
-**Versi terkirim:** 0.15.6~ynh1
+**Versi terkirim:** 0.16.0~ynh1
 
 ## Tangkapan Layar
 
