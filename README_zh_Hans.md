@@ -20,7 +20,7 @@
 
 Readeck is a simple web application that lets you save the precious readable content of web pages you like and want to keep forever.
 
-**分发版本：** 0.16.0~ynh1
+**分发版本：** 0.17.1~ynh1
 
 ## 截图
 
