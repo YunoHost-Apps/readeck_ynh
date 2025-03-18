@@ -4,7 +4,7 @@ secret_key = "__KEY__"
 data_directory = "__DATA_DIR__"
 
 [server]
-host = 127.0.0.1
+host = "127.0.0.1"
 port = __PORT__
 allowed_hosts = ["__DOMAIN__"]
 trusted_proxies = ["127.0.0.1"]
