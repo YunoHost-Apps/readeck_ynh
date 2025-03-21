@@ -71,6 +71,10 @@ ram.runtime = "50M"
     api.show_tile = false
     api.allowed = "visitors"
     api.auth_header = false
+    opds.url = "/opds"
+    opds.show_tile = false
+    opds.allowed = "visitors"
+    opds.auth_header = false
 
     [resources.ports]
 
