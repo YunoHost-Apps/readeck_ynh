@@ -38,6 +38,8 @@ ynh_config_add --template="config.toml" --destination="$data_dir/config.toml"
 
 chmod 600 "$data_dir/config.toml"
 
+ynh_config_add_fail2ban --logpath="/var/log/nginx/${domain}-access.log" --failregex="<HOST> .*(GET|POST) (/login|/api.*|/opds.*) .* 401"
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
