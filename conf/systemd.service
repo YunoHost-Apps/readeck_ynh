@@ -14,6 +14,7 @@ RestartSec=5
 # Sandboxing options to harden security
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html
 ReadWritePaths=__INSTALL_DIR__ __DATA_DIR__
+MemoryDenyWriteExecute=true
 NoNewPrivileges=yes
 PrivateTmp=yes
 PrivateDevices=yes
