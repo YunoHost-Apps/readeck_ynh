@@ -7,9 +7,7 @@ data_directory = "__DATA_DIR__"
 host = "127.0.0.1"
 port = __PORT__
 allowed_hosts = ["__DOMAIN__"]
-use_x_forwarded_for = true
-use_x_forwarded_host = true
-use_x_forwarded_proto = true
+trusted_proxies = ["127.0.0.1"]
 
 [database]
 source = "postgres://__DB_USER__:__DB_PWD__@localhost:5432/__DB_NAME__"
