@@ -11,10 +11,10 @@ ExecStart=__INSTALL_DIR__/readeck serve -config __DATA_DIR__/config.toml
 Restart=on-failure
 RestartSec=5
 
-### Depending on specificities of your service/app, you may need to tweak these
-### .. but this should be a good baseline
 # Sandboxing options to harden security
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html
+ReadWritePaths=__INSTALL_DIR__ __DATA_DIR__
+MemoryDenyWriteExecute=true
 NoNewPrivileges=yes
 PrivateTmp=yes
 PrivateDevices=yes
