@@ -7,7 +7,7 @@ name = "Readeck"
 description.en = "Bookmark manager and a read later tool"
 description.fr = "Gestionnaire de favoris et outil de lecture ultérieure"
 
-version = "0.17.1~ynh1"
+version = "0.17.1~ynh2"
 
 maintainers = ["eric_G"]
 
@@ -18,12 +18,13 @@ admindoc = "https://readeck.org/en/docs/"
 code = "https://codeberg.org/readeck/readeck"
 
 [integration]
-yunohost = ">= 11.2.30"
+yunohost = ">= 12.0.9"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
 ldap = false
+
 sso = false
 
 disk = "50M"
@@ -70,6 +71,10 @@ ram.runtime = "50M"
     api.show_tile = false
     api.allowed = "visitors"
     api.auth_header = false
+    opds.url = "/opds"
+    opds.show_tile = false
+    opds.allowed = "visitors"
+    opds.auth_header = false
 
     [resources.ports]
 
