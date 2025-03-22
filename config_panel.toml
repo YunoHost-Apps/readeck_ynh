@@ -1,0 +1,19 @@
+version = "1.0"
+
+[main]
+name.en = "Readeck configuration"
+name.fr = "Configuration de Readeck"
+services = ["__APP__"]
+
+
+    [main.configuration]
+    name.en = "Users and accounts configuration"
+    name.fr = "Configuration des utilisateurs et des comptes"
+
+        [main.configuration.public_share_ttl]
+        ask.en = "Public link sharing time"
+        ask.fr = "Temps de partage des liens publics"
+        type = "number"
+        help.en = "Indicate the public link sharing time in hours"
+        help.fr = "Indiquer le temps de partage du lien public en heures"
+        bind = "public_share_ttl:__DATA_DIR__/config.toml"
