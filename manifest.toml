@@ -7,7 +7,7 @@ name = "Readeck"
 description.en = "Bookmark manager and a read later tool"
 description.fr = "Gestionnaire de favoris et outil de lecture ultérieure"
 
-version = "0.17.1~ynh2"
+version = "0.18.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -20,7 +20,7 @@ code = "https://codeberg.org/readeck/readeck"
 [integration]
 yunohost = ">= 12.0.9"
 helpers_version = "2.1"
-architectures = "all"
+architectures = [ "amd64", "arm64" ]
 multi_instance = true
 
 ldap = false
@@ -44,18 +44,15 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.17.1/readeck-0.17.1-linux-amd64"
-    amd64.sha256 = "f5102d774e20e34d9dda95a8df9ab59fcd73bc2fcdbfb6082be0ad6cdca77416"
-    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.17.1/readeck-0.17.1-linux-arm64"
-    arm64.sha256 = "1898abba0adbdfd40e40357fbee9f8a69901dee61eabe73784dc73f1214a7078"
-    armhf.url = "https://codeberg.org/readeck/readeck/releases/download/0.17.1/readeck-0.17.1-linux-arm-6"
-    armhf.sha256 = "d60cd0880c3619c48b5cc7b7a9fad86ab79bb626952244b9633717962e84c48a"
+    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.18.0/readeck-0.18.0-linux-amd64"
+    amd64.sha256 = "c39fe45aebacdf5178c81d4e9853ffa8aa0b5d43704aea09ce38012ace66af90"
+    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.18.0/readeck-0.18.0-linux-arm64"
+    arm64.sha256 = "422206a1757eef277760393ba8b6a7b022684a1205bdc6aa72923c152afed24b"
     rename = "readeck"
 
     autoupdate.strategy = "latest_forgejo_release"
     autoupdate.asset.amd64 = "^readeck-.*-linux-amd64$"
     autoupdate.asset.arm64 = "^readeck-.*-linux-arm64$"
-    autoupdate.asset.armhf = "^readeck-.*-linux-arm-6$"
     
     [resources.system_user]
     allow_email = true
