@@ -7,7 +7,7 @@ name = "Readeck"
 description.en = "Bookmark manager and a read later tool"
 description.fr = "Gestionnaire de favoris et outil de lecture ultérieure"
 
-version = "0.18.2~ynh1"
+version = "0.19.1~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -44,10 +44,10 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.18.2/readeck-0.18.2-linux-amd64"
-    amd64.sha256 = "598c5fa2ec3f867c141064d7eba07ec9cfa6ee13b1ef0a2b49318fe19907fd60"
-    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.18.2/readeck-0.18.2-linux-arm64"
-    arm64.sha256 = "322c2345a98f895db9e7ebab85fbdde492f55f13c6006840ca582faf32658f2c"
+    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.19.1/readeck-0.19.1-linux-amd64"
+    amd64.sha256 = "d98e101ef1975f41c6077c4af298a2bb7bb4b7f4930b9a08228458f1d3a9de84"
+    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.19.1/readeck-0.19.1-linux-arm64"
+    arm64.sha256 = "173723f5d39f9ed1f112320508c00b94d1b92dcd07c7609ced03a6904899d010"
     rename = "readeck"
 
     autoupdate.strategy = "latest_forgejo_release"
