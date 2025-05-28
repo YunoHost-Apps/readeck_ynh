@@ -19,6 +19,15 @@ ynh_setup_source --dest_dir="$install_dir"
 chmod a+x "$install_dir/readeck"
 
 #=================================================
+# ADD A CONFIGURATION
+#=================================================
+ynh_script_progression "Adding $app's configuration..."
+
+ynh_config_add --template="config.toml" --destination="$data_dir/config.toml"
+
+chmod 600 "$data_dir/config.toml"
+
+#=================================================
 # SYSTEM CONFIGURATION
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
@@ -28,15 +37,6 @@ ynh_config_add_nginx
 ynh_config_add_systemd
 
 yunohost service add "$app" --description="Bookmark manager and a read later tool" --log="/var/log/$app/$app.log"
-
-#=================================================
-# ADD A CONFIGURATION
-#=================================================
-ynh_script_progression "Adding $app's configuration..."
-
-ynh_config_add --template="config.toml" --destination="$data_dir/config.toml"
-
-chmod 600 "$data_dir/config.toml"
 
 ynh_config_add_fail2ban --logpath="/var/log/nginx/${domain}-access.log" --failregex="<HOST> .*(GET|POST) (/login|/api.*|/opds.*) .* 401"
 
