@@ -7,7 +7,7 @@ name = "Readeck"
 description.en = "Bookmark manager and a read later tool"
 description.fr = "Gestionnaire de favoris et outil de lecture ultérieure"
 
-version = "0.19.2~ynh1"
+version = "0.20.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -43,14 +43,14 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    i386.url = "https://codeberg.org/readeck/readeck/releases/download/0.19.2/readeck-0.19.2-linux-386"
-    i386.sha256 = "e48af2340cd66f81aa0f2e0724f90a4475cceee808d8607b22f92af3b6517bca"
-    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.19.2/readeck-0.19.2-linux-amd64"
-    amd64.sha256 = "e215c5e869b84e7a14d6d1d981e0651fa5e126cfead5b15925dcb0d0e9f33943"
-    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.19.2/readeck-0.19.2-linux-arm64"
-    arm64.sha256 = "dea2cf5ea331579690131282139c802ff22e0d517eed15ff37eec7ee01607ccc"
-    armhf.url = "https://codeberg.org/readeck/readeck/releases/download/0.19.2/readeck-0.19.2-linux-arm-5"
-    armhf.sha256 = "6734d61ac372d07ca5f60141a766e5f6c77a37d3119dc784e1c3b5ea454b2d25"
+    i386.url = "https://codeberg.org/readeck/readeck/releases/download/0.20.0/readeck-0.20.0-linux-386"
+    i386.sha256 = "1ec8a32f6a6246d00e41bd84a0d4d160608209ff616a9e845102bce5aaf69723"
+    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.20.0/readeck-0.20.0-linux-amd64"
+    amd64.sha256 = "99ac037f1f23a7dfe144af824fefef7e607569a9b3a8228f6fe1595b448a6606"
+    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.20.0/readeck-0.20.0-linux-arm64"
+    arm64.sha256 = "2fb5192461d0342c6d96d36261a1e6bcc0631068a92f5d997e0ccec362efe773"
+    armhf.url = "https://codeberg.org/readeck/readeck/releases/download/0.20.0/readeck-0.20.0-linux-arm-5"
+    armhf.sha256 = "a5eb3b696030c41e6b6b779db31783958d4edd1ecc40d78c290e68c0de4a6e57"
     rename = "readeck"
 
     autoupdate.strategy = "latest_forgejo_release"
@@ -69,13 +69,15 @@ ram.runtime = "50M"
     [resources.permissions]
     main.url = "/"
     main.auth_header = false
+
     api.url = "/api"
-    api.show_tile = false
     api.allowed = "visitors"
+    api.show_tile = false
     api.auth_header = false
+
     opds.url = "/opds"
-    opds.show_tile = false
     opds.allowed = "visitors"
+    opds.show_tile = false
     opds.auth_header = false
 
     [resources.ports]
