@@ -28,6 +28,15 @@ ynh_setup_source --dest_dir="$install_dir"
 chmod a+x "$install_dir/readeck"
 
 #=================================================
+# UPDATE A CONFIG FILE
+#=================================================
+ynh_script_progression "Updating $app's configuration files..."
+
+ynh_config_add --template="config.toml" --destination="$data_dir/config.toml"
+
+chmod 600 "$data_dir/config.toml"
+
+#=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================
 ynh_script_progression "Upgrading system configurations related to $app..."
