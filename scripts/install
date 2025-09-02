@@ -7,10 +7,8 @@ source /usr/share/yunohost/helpers
 # INITIALIZE AND STORE SETTINGS
 #=================================================
 
-key=$(ynh_string_random --length=50)
-
-public_share_ttl="48"
-ynh_app_setting_set --app=$app --key=public_share_ttl --value=$public_share_ttl
+ynh_app_setting_set_default --key=public_share_ttl --value="48"
+ynh_app_setting_set_default --key=key --value=$(ynh_string_random --length=50)
 
 #=================================================
 # APP "BUILD" (DEPLOYING SOURCES, VENV, COMPILING ETC)
