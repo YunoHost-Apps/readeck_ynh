@@ -22,4 +22,6 @@ from = "__APP__@__DOMAIN__"
 from_noreply = "noreply@__DOMAIN__"
 
 [bookmarks]
+# please use the YunoHost config panel to edit this setting
+# otherwise your edition will be rest at each update of the package
 public_share_ttl = __PUBLIC_SHARE_TTL__
