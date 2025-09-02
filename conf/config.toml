@@ -1,6 +1,6 @@
 [main]
 log_level = "info"
-secret_key = "__KEY__"
+secret_key = "__SECRET_KEY__"
 data_directory = "__DATA_DIR__"
 
 [server]
@@ -22,4 +22,6 @@ from = "__APP__@__DOMAIN__"
 from_noreply = "noreply@__DOMAIN__"
 
 [bookmarks]
-public_share_ttl = 48
+# please use the YunoHost config panel to edit this setting
+# otherwise your edition will be rest at each update of the package
+public_share_ttl = __PUBLIC_SHARE_TTL__
