@@ -7,7 +7,7 @@ name = "Readeck"
 description.en = "Bookmark manager and a read later tool"
 description.fr = "Gestionnaire de favoris et outil de lecture ultérieure"
 
-version = "0.18.2~ynh1"
+version = "0.20.1~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -20,11 +20,10 @@ code = "https://codeberg.org/readeck/readeck"
 [integration]
 yunohost = ">= 12.0.9"
 helpers_version = "2.1"
-architectures = [ "amd64", "arm64" ]
+architectures = "all"
 multi_instance = true
 
 ldap = false
-
 sso = false
 
 disk = "50M"
@@ -44,15 +43,21 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.18.2/readeck-0.18.2-linux-amd64"
-    amd64.sha256 = "598c5fa2ec3f867c141064d7eba07ec9cfa6ee13b1ef0a2b49318fe19907fd60"
-    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.18.2/readeck-0.18.2-linux-arm64"
-    arm64.sha256 = "322c2345a98f895db9e7ebab85fbdde492f55f13c6006840ca582faf32658f2c"
+    i386.url = "https://codeberg.org/readeck/readeck/releases/download/0.20.1/readeck-0.20.1-linux-386"
+    i386.sha256 = "65a87625ecaee26dc9b306a31e8db036c6f68ca805575a621dc22a6fcb1da297"
+    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.20.1/readeck-0.20.1-linux-amd64"
+    amd64.sha256 = "9c9e0ddf61eae65cd2369a533947e54ebd3f30e820a4be0fa42590a9bb6aea26"
+    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.20.1/readeck-0.20.1-linux-arm64"
+    arm64.sha256 = "48a506f340d343b9f52c4809a3cfe51a54c833b3751897d7412bffda9e108b22"
+    armhf.url = "https://codeberg.org/readeck/readeck/releases/download/0.20.1/readeck-0.20.1-linux-arm-5"
+    armhf.sha256 = "74282dc9bd9dd85c81f38689ca0d6ab62029b468460713fe6eb8d172f2c467be"
     rename = "readeck"
 
     autoupdate.strategy = "latest_forgejo_release"
+    autoupdate.asset.i386 = "^readeck-.*-linux-386$"
     autoupdate.asset.amd64 = "^readeck-.*-linux-amd64$"
     autoupdate.asset.arm64 = "^readeck-.*-linux-arm64$"
+    autoupdate.asset.armhf = "^readeck-.*-linux-arm-5$"
     
     [resources.system_user]
     allow_email = true
@@ -64,13 +69,15 @@ ram.runtime = "50M"
     [resources.permissions]
     main.url = "/"
     main.auth_header = false
+
     api.url = "/api"
-    api.show_tile = false
     api.allowed = "visitors"
+    api.show_tile = false
     api.auth_header = false
+
     opds.url = "/opds"
-    opds.show_tile = false
     opds.allowed = "visitors"
+    opds.show_tile = false
     opds.auth_header = false
 
     [resources.ports]
