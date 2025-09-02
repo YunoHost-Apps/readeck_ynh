@@ -1,6 +1,6 @@
 [main]
 log_level = "info"
-secret_key = "__KEY__"
+secret_key = "__SECRET_KEY__"
 data_directory = "__DATA_DIR__"
 
 [server]

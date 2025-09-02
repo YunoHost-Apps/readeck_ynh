@@ -3,8 +3,8 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
-ynh_app_setting_set_default --key="public_share_ttl" --value="48"
-ynh_app_setting_set_default --key="key" --value=$(ynh_string_random --length=50)
+ynh_app_setting_set_default --key=public_share_ttl --value="48"
+ynh_app_setting_set_default --key=secret_key --value=$(ynh_string_random --length=50)
 
 #=================================================
 # STOP SYSTEMD SERVICE
