@@ -7,7 +7,7 @@ name = "Readeck"
 description.en = "Bookmark manager and a read later tool"
 description.fr = "Gestionnaire de favoris et outil de lecture ultérieure"
 
-version = "0.20.3~ynh1"
+version = "0.20.3~ynh2"
 
 maintainers = [ "OniriCorpe" ]
 
