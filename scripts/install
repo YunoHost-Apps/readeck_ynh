@@ -34,7 +34,6 @@ chmod 600 "$data_dir/config.toml"
 ynh_script_progression "Adding system configurations related to $app..."
 
 ynh_hide_warnings ynh_psql_db_shell <<< "CREATE EXTENSION IF NOT EXISTS unaccent;"
-ynh_hide_warnings ynh_psql_db_shell <<< "CREATE EXTENSION IF NOT EXISTS pg_trgm;"
 
 ynh_config_add_nginx
 
