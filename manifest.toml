@@ -7,7 +7,7 @@ name = "Readeck"
 description.en = "Bookmark manager and a read later tool"
 description.fr = "Gestionnaire de favoris et outil de lecture ultérieure"
 
-version = "0.21.1~ynh1"
+version = "0.21.2~ynh1"
 
 maintainers = [ "OniriCorpe" ]
 
@@ -43,14 +43,14 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    i386.url = "https://codeberg.org/readeck/readeck/releases/download/0.21.1/readeck-0.21.1-linux-386"
-    i386.sha256 = "27de7e856b244bdf2e3532847e0118905953dcf0b0c718d7db2bb3b6b864655e"
-    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.21.1/readeck-0.21.1-linux-amd64"
-    amd64.sha256 = "7a3076d7441b01f947af9edf1efa6b40aaf7435310276e7d984f5c37f3adbc21"
-    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.21.1/readeck-0.21.1-linux-arm64"
-    arm64.sha256 = "896d9713cf9a5609a9020b69c13763e783a1636b3bd805bb4d58793981758562"
-    armhf.url = "https://codeberg.org/readeck/readeck/releases/download/0.21.1/readeck-0.21.1-linux-arm-5"
-    armhf.sha256 = "8f8bf39d01bdf006c6c1e7a6a9a0957b76727d8681c796925cea97d3afc5d028"
+    i386.url = "https://codeberg.org/readeck/readeck/releases/download/0.21.2/readeck-0.21.2-linux-386"
+    i386.sha256 = "d0daf7f7c5b3cf68d4c73c74d177d110e6f8565a8b30af3416b6e185c4ff059b"
+    amd64.url = "https://codeberg.org/readeck/readeck/releases/download/0.21.2/readeck-0.21.2-linux-amd64"
+    amd64.sha256 = "8dcff0d83feab84ffedae69fd11a28dd8828f1781f7f9dbef3057f7ed20e85a7"
+    arm64.url = "https://codeberg.org/readeck/readeck/releases/download/0.21.2/readeck-0.21.2-linux-arm64"
+    arm64.sha256 = "269f16a9b2024744131794459e2a753d38973f7f0433210d38ce9a3d8e8d4ebd"
+    armhf.url = "https://codeberg.org/readeck/readeck/releases/download/0.21.2/readeck-0.21.2-linux-arm-5"
+    armhf.sha256 = "9de338ce96b7716a18fd809133066099297fc3cb0573e09c53758aaf04165c90"
     rename = "readeck"
 
     autoupdate.strategy = "latest_forgejo_release"
