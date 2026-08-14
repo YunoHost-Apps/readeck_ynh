@@ -13,13 +13,15 @@ trusted_proxies = ["127.0.0.1"]
 source = "postgres://__DB_USER__:__DB_PWD__@localhost:5432/__DB_NAME__"
 
 [email]
-host = "localhost"
-port = 25
+host = "__DOMAIN__"
+port = 587
 username = "__APP__"
 password = "__MAIL_PWD__"
-encryption = ""
+encryption = "starttls"
 from = "__APP__@__DOMAIN__"
-from_noreply = "noreply@__DOMAIN__"
+#`allow_email` only creates a single email address on the domain, 
+# we don't have a specific "no-reply" one, so let's reuse it 
+from_noreply = "__APP__@__DOMAIN__"
 
 [bookmarks]
 # please use the YunoHost config panel to edit this setting
