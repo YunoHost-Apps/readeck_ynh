@@ -30,6 +30,7 @@ ynh_psql_db_shell < ./db.sql
 ynh_script_progression "Restoring system configurations related to $app..."
 
 ynh_restore "/etc/nginx/conf.d/$domain.d/$app.conf"
+fix_csp_forwarding
 
 ynh_restore "/etc/systemd/system/$app.service"
 systemctl enable "$app.service" --quiet
