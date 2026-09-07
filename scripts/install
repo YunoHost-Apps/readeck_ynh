@@ -36,6 +36,7 @@ ynh_script_progression "Adding system configurations related to $app..."
 ynh_hide_warnings ynh_psql_db_shell <<< "CREATE EXTENSION IF NOT EXISTS unaccent;"
 
 ynh_config_add_nginx
+fix_csp_forwarding
 
 ynh_config_add_systemd
 

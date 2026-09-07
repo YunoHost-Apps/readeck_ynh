@@ -44,6 +44,7 @@ chmod 600 "$data_dir/config.toml"
 ynh_script_progression "Upgrading system configurations related to $app..."
 
 ynh_config_add_nginx
+fix_csp_forwarding
 
 ynh_config_add_systemd
 
