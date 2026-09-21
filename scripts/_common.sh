@@ -17,7 +17,7 @@ fix_csp_forwarding() {
     if dpkg --compare-versions "$current_ynh_core_version" lt "$CSP_fix_ynh_core_version" && ! grep -q '# Force usage of some app-defined headers' "/etc/nginx/conf.d/$domain.d/$app.conf"; then
 	    # Add pre-Trixie fix to nginx.conf
 		sed -i '/\}/i \ \ # Force usage of some app-defined headers\
-  # (fix for pre-YNH 13.x stable version, cf. https://github.com/YunoHost-Apps/readeck_ynh/issues/81)\
+  # (fix for YNH pre-13.0.8, cf. https://github.com/YunoHost-Apps/readeck_ynh/issues/81)\
   more_set_headers "X-Frame-Options: $upstream_http_x_frame_options";\
   more_set_headers "Content-Security-Policy: $upstream_http_content_security_policy";'\
 	    "/etc/nginx/conf.d/$domain.d/$app.conf"
