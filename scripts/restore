@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -16,6 +15,8 @@ ynh_restore "$install_dir"
 ynh_script_progression "Restoring the data directory..."
 
 ynh_restore "$data_dir"
+chmod 600 "$data_dir/config.toml"
+chown -R $app:$app "$data_dir"
 
 #=================================================
 # RESTORE THE POSTGRESQL DATABASE

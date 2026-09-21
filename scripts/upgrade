@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -37,6 +36,7 @@ ynh_script_progression "Updating $app's configuration files..."
 ynh_config_add --template="config.toml" --destination="$data_dir/config.toml"
 
 chmod 600 "$data_dir/config.toml"
+chown -R $app:$app "$data_dir"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS

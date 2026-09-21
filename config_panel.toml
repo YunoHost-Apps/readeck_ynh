@@ -5,7 +5,6 @@ name.en = "Readeck configuration"
 name.fr = "Configuration de Readeck"
 services = ["__APP__"]
 
-
     [main.configuration]
 
         [main.configuration.public_share_ttl]
