@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -44,6 +45,7 @@ chown -R $app:$app "$data_dir"
 ynh_script_progression "Upgrading system configurations related to $app..."
 
 ynh_config_add_nginx
+fix_csp_forwarding
 
 ynh_config_add_systemd
 
